@@ -1,3 +1,4 @@
+import dio.desafio.Conteudo;
 import dio.desafio.Curso;
 import dio.desafio.Mentoria;
 
@@ -14,13 +15,16 @@ public class Main {
         Curso curso2 = new Curso();
         curso2.setTitulo("Curso Js");
         curso2.setDescricao("Descrição do desafio Js");
-        curso2.setCargaHoraria(8);
+        curso2.setCargaHoraria(4);
 
 
         Mentoria mentoria = new Mentoria();
         mentoria.setTitulo("Mentoria Java");
         mentoria.setDescricao("Mentoria do curso Java");
         mentoria.setData(LocalDate.now());
+
+        //Polimorfismo
+        Conteudo conteudo = new Curso();
 
 
         System.out.println(curso1);
